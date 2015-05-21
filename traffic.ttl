@@ -7,15 +7,15 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.sensormeasurement.appspot.com/ont/transport/traffic#> .
+@prefix traffic: <http://purl.org/iot/vocab/traffic> .
 @prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#>
+<http://purl.org/iot/vocab/traffic>
   a owl:Ontology, owl:NamedIndividual, <http://purl.org/vocommons/voaf#Vocabulary> ;
   owl:versionInfo 1.0 ;
   dc:issued "2012-01-21"^^xsd:date ;
   dc:modified "2012-09-07"^^xsd:date ;
-  vann:preferredNamespaceUri "http://www.sensormeasurement.appspot.com/ont/transport/traffic#" ;
+  vann:preferredNamespaceUri "http://purl.org/iot/vocab/traffic#" ;
   vann:preferredNamespacePrefix "traffic" ;
   rdfs:comment " An ontology to describe the management of the traffic" ;
   dcterms:description "A traffic ontology that describes the management of the traffic in a straight road with two lanes, both in the same direction. The situation is an ambulance trying to overtake all the other cars and they have to modify their speed and positions in order to able the ambulance to pass as fast as possible."@en ;
@@ -25,58 +25,58 @@
   dc:source <http://link.springer.com/chapter/10.1007%2F978-3-642-32524-3_14> ;
   dc:creator <mailto:alberto.cordoba@unavarra.es>, <mailto:antoniojesus.bermejo@unavarra.es>, <mailto:jesusv@unavarra.es>, <mailto:josej.astrain@unavarra.es> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#beforeTheGap>
+<http://purl.org/iot/vocab/traffic#beforeTheGap>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#bigSpeedDifference>
+<http://purl.org/iot/vocab/traffic#bigSpeedDifference>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#speedWith> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpaceAhead>
+<http://purl.org/iot/vocab/traffic#hasSpaceAhead>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpace> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#hasSpace> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpaceBehind>
+<http://purl.org/iot/vocab/traffic#hasSpaceBehind>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpace> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#hasSpace> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpaceLateral>
+<http://purl.org/iot/vocab/traffic#hasSpaceLateral>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpace> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#hasSpace> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#isInFrontOfOvertaker>
+<http://purl.org/iot/vocab/traffic#isInFrontOfOvertaker>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#isOvertaking>
+<http://purl.org/iot/vocab/traffic#isOvertaking>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#lastFirstBeforeAfter-TheGap>
+<http://purl.org/iot/vocab/traffic#lastFirstBeforeAfter-TheGap>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:boolean .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWithBeforeTheGapCar>
+<http://purl.org/iot/vocab/traffic#speedWithBeforeTheGapCar>
   a owl:AnnotationProperty, owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#speedWith> ;
   rdfs:range [
     a rdfs:Datatype ;
     owl:oneOf (
@@ -93,43 +93,43 @@
 <http://www.traffic.com/ontologies/a.owl#isOvertaking> a owl:AnnotationProperty .
 <http://www.w3org/2003/06/sw-vocab-status/ns#term_status> a owl:AnnotationProperty .
 foaf:name a owl:AnnotationProperty .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#doesAction>
+<http://purl.org/iot/vocab/traffic#doesAction>
   a owl:ObjectProperty, owl:AsymmetricProperty, owl:FunctionalProperty, owl:IrreflexiveProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> .
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#isActionDoneBy>
+<http://purl.org/iot/vocab/traffic#isActionDoneBy>
   a owl:ObjectProperty, owl:AsymmetricProperty, owl:InverseFunctionalProperty, owl:IrreflexiveProperty ;
-  rdfs:range <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  owl:inverseOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#doesAction> .
+  rdfs:range <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  owl:inverseOf <http://purl.org/iot/vocab/traffic#doesAction> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasDirectionValue>
+<http://purl.org/iot/vocab/traffic#hasDirectionValue>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#movement> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#movement> ;
   rdfs:range rdfs:Literal .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpace> a owl:DatatypeProperty .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasSpeedValue>
+<http://purl.org/iot/vocab/traffic#hasSpace> a owl:DatatypeProperty .
+<http://purl.org/iot/vocab/traffic#hasSpeedValue>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#movement> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#movement> ;
   rdfs:range xsd:nonNegativeInteger .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasXValue>
+<http://purl.org/iot/vocab/traffic#hasXValue>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:integer .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#hasYValue>
+<http://purl.org/iot/vocab/traffic#hasYValue>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#position> ;
   rdfs:range xsd:integer .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#movement> a owl:DatatypeProperty .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#position> a owl:DatatypeProperty .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> a owl:DatatypeProperty .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWithAheadCar>
+<http://purl.org/iot/vocab/traffic#movement> a owl:DatatypeProperty .
+<http://purl.org/iot/vocab/traffic#position> a owl:DatatypeProperty .
+<http://purl.org/iot/vocab/traffic#speedWith> a owl:DatatypeProperty .
+<http://purl.org/iot/vocab/traffic#speedWithAheadCar>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#speedWith> ;
   rdfs:range [
     a rdfs:Datatype ;
     owl:oneOf (
@@ -139,10 +139,10 @@ foaf:name a owl:AnnotationProperty .
    )
   ] .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWithBehindCar>
+<http://purl.org/iot/vocab/traffic#speedWithBehindCar>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#speedWith> ;
   rdfs:range [
     a rdfs:Datatype ;
     owl:oneOf (
@@ -152,10 +152,10 @@ foaf:name a owl:AnnotationProperty .
    )
   ] .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWithOvertaker>
+<http://purl.org/iot/vocab/traffic#speedWithOvertaker>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
-  rdfs:subPropertyOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#speedWith> ;
+  rdfs:domain <http://purl.org/iot/vocab/traffic#Vehicle> ;
+  rdfs:subPropertyOf <http://purl.org/iot/vocab/traffic#speedWith> ;
   rdfs:range [
     a rdfs:Datatype ;
     owl:oneOf (
@@ -175,92 +175,92 @@ e.g., designed for similar purposes or domains, or designed by the same publishe
     A vocabulary can belong to zero, one or more vocabulary spaces."""@en ;
   rdfs:isDefinedBy <http://purl.org/vocommons/voaf#> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Accelerate>
+<http://purl.org/iot/vocab/traffic#Accelerate>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action>
+<http://purl.org/iot/vocab/traffic#Action>
   a owl:Class ;
   rdfs:subClassOf owl:Thing, [
     a owl:Restriction ;
-    owl:onProperty <http://www.sensormeasurement.appspot.com/ont/transport/traffic#isActionDoneBy> ;
-    owl:someValuesFrom <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle>
+    owl:onProperty <http://purl.org/iot/vocab/traffic#isActionDoneBy> ;
+    owl:someValuesFrom <http://purl.org/iot/vocab/traffic#Vehicle>
   ] .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#AfterGap>
+<http://purl.org/iot/vocab/traffic#AfterGap>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Position> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Position> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Ahead>
+<http://purl.org/iot/vocab/traffic#Ahead>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Space> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Space> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#BeforeGap>
+<http://purl.org/iot/vocab/traffic#BeforeGap>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Position> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Position> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Behind>
+<http://purl.org/iot/vocab/traffic#Behind>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Space> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Space> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#ChangeLine>
+<http://purl.org/iot/vocab/traffic#ChangeLine>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Decelerate>
+<http://purl.org/iot/vocab/traffic#Decelerate>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#FirstAfterGap>
+<http://purl.org/iot/vocab/traffic#FirstAfterGap>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Position> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Position> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#LastBeforeGap>
+<http://purl.org/iot/vocab/traffic#LastBeforeGap>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Position> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Position> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Lateral>
+<http://purl.org/iot/vocab/traffic#Lateral>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Space> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Space> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#MaintainDistanceWithCarInFront>
+<http://purl.org/iot/vocab/traffic#MaintainDistanceWithCarInFront>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#MaintainSpeed>
+<http://purl.org/iot/vocab/traffic#MaintainSpeed>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#NoSpace>
+<http://purl.org/iot/vocab/traffic#NoSpace>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Space> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Space> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#NotOvertaker>
+<http://purl.org/iot/vocab/traffic#NotOvertaker>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Vehicle> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Overtaker>
+<http://purl.org/iot/vocab/traffic#Overtaker>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Vehicle> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Position>
+<http://purl.org/iot/vocab/traffic#Position>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Vehicle> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#SoftAccelerate>
+<http://purl.org/iot/vocab/traffic#SoftAccelerate>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#SoftDecelerate>
+<http://purl.org/iot/vocab/traffic#SoftDecelerate>
   a owl:Class ;
-  rdfs:subClassOf <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Action> .
+  rdfs:subClassOf <http://purl.org/iot/vocab/traffic#Action> .
 
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Space> a owl:Class .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle>
+<http://purl.org/iot/vocab/traffic#Space> a owl:Class .
+<http://purl.org/iot/vocab/traffic#Vehicle>
   a owl:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
-    owl:onProperty <http://www.sensormeasurement.appspot.com/ont/transport/traffic#doesAction> ;
+    owl:onProperty <http://purl.org/iot/vocab/traffic#doesAction> ;
     owl:cardinality "1"^^xsd:nonNegativeInteger
   ] .
 
@@ -268,8 +268,8 @@ foaf:Organization a owl:Class .
 foaf:Person a owl:Class .
 <http://www.unavarra.es> a owl:NamedIndividual, foaf:Organization .
 <http://purl.org/vocommons/voaf> a owl:NamedIndividual, <http://purl.org/vocommons/voaf#Vocabulary> .
-<http://www.sensormeasurement.appspot.com/ont/transport/traffic#Car1>
-  a owl:NamedIndividual, <http://www.sensormeasurement.appspot.com/ont/transport/traffic#Vehicle> ;
+<http://purl.org/iot/vocab/traffic#Car1>
+  a owl:NamedIndividual, <http://purl.org/iot/vocab/traffic#Vehicle> ;
   ns1:speedWithBeforeTheGapCar 2 ;
   ns1:isOvertaking false ;
   ns1:hasSpaceLateral false ;
