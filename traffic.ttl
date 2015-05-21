@@ -1,7 +1,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -15,8 +15,8 @@
   owl:versionInfo 1.0 ;
   dc:issued "2012-01-21"^^xsd:date ;
   dc:modified "2012-09-07"^^xsd:date ;
-  ns0:preferredNamespaceUri "http://www.sensormeasurement.appspot.com/ont/transport/traffic#" ;
-  ns0:preferredNamespacePrefix "traffic" ;
+  vann:preferredNamespaceUri "http://www.sensormeasurement.appspot.com/ont/transport/traffic#" ;
+  vann:preferredNamespacePrefix "traffic" ;
   rdfs:comment " An ontology to describe the management of the traffic" ;
   dcterms:description "A traffic ontology that describes the management of the traffic in a straight road with two lanes, both in the same direction. The situation is an ambulance trying to overtake all the other cars and they have to modify their speed and positions in order to able the ambulance to pass as fast as possible."@en ;
   skos:historyNote "Ontology extracted from the paper Ontology Based Road Traffic Management. [Bermejo, A.J. et al. 2012] "@en ;
