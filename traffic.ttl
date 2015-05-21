@@ -8,7 +8,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.sensormeasurement.appspot.com/ont/transport/traffic#> .
-@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 
 <http://www.sensormeasurement.appspot.com/ont/transport/traffic#>
   a owl:Ontology, owl:NamedIndividual, <http://purl.org/vocommons/voaf#Vocabulary> ;
@@ -338,88 +338,88 @@ ns1:c a <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#c> a <http://www.w3.org/2003/11/swrl#Variable> .
 []
   a <http://www.w3.org/2003/11/swrl#Imp> ;
-  ns2:body (
+  swrl:body (
    _:genid29
    _:genid22
    _:genid28
    _:genid27
    _:genid26
  ) ;
-  ns2:head ( _:genid31 ) .
+  swrl:head ( _:genid31 ) .
 
 _:genid22
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid26
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid27
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid28
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid29
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid31
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid34
    _:genid40
    _:genid37
    _:genid39
  ) ;
-  ns2:head ( _:genid42 ) .
+  swrl:head ( _:genid42 ) .
 
 _:genid34
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid37
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid39
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid40
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid42
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid45 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid45 ) ;
+  swrl:body (
    _:genid55
    _:genid54
    _:genid53
@@ -428,229 +428,229 @@ _:genid42
  ) .
 
 _:genid45
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid51
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid52
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid53
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid54
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid55
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid58
    _:genid60
    _:genid64
    _:genid63
  ) ;
-  ns2:head ( _:genid66 ) .
+  swrl:head ( _:genid66 ) .
 
 _:genid58
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid60
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid63
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid64
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid66
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid71
    _:genid70
  ) ;
-  ns2:head ( _:genid73 ) .
+  swrl:head ( _:genid73 ) .
 
 _:genid70
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid71
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:beforeTheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:beforeTheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid73
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid76 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid76 ) ;
+  swrl:body (
    _:genid78
    _:genid80
  ) .
 
 _:genid76
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid78
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:hasSpaceAhead ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:hasSpaceAhead ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid80
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceLateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceLateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid89
    _:genid84
    _:genid86
    _:genid88
  ) ;
-  ns2:head ( _:genid91 ) .
+  swrl:head ( _:genid91 ) .
 
 _:genid84
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid86
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid88
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid89
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid91
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid94
    _:genid102
    _:genid97
    _:genid99
    _:genid101
  ) ;
-  ns2:head ( _:genid104 ) .
+  swrl:head ( _:genid104 ) .
 
 _:genid94
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid97
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid99
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid101
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid102
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid104
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid107
    _:genid109
  ) ;
-  ns2:head ( _:genid111 ) .
+  swrl:head ( _:genid111 ) .
 
 _:genid107
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid109
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid111
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:ChangeLine ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:ChangeLine ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid114 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid114 ) ;
+  swrl:body (
    _:genid124
    _:genid117
    _:genid119
@@ -659,198 +659,198 @@ _:genid111
  ) .
 
 _:genid114
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid117
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid119
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid121
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid123
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid124
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid135
    _:genid134
    _:genid129
    _:genid133
    _:genid132
  ) ;
-  ns2:head ( _:genid137 ) .
+  swrl:head ( _:genid137 ) .
 
 _:genid129
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid132
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid133
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid134
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid135
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid137
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid148
    _:genid147
    _:genid142
    _:genid146
    _:genid145
  ) ;
-  ns2:head ( _:genid150 ) .
+  swrl:head ( _:genid150 ) .
 
 _:genid142
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid145
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid146
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid147
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid148
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid150
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid155
    _:genid154
  ) ;
-  ns2:head ( _:genid157 ) .
+  swrl:head ( _:genid157 ) .
 
 _:genid154
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid155
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:beforeTheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:beforeTheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid157
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid168
    _:genid161
    _:genid163
    _:genid167
    _:genid166
  ) ;
-  ns2:head ( _:genid170 ) .
+  swrl:head ( _:genid170 ) .
 
 _:genid161
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid163
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid166
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid167
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid168
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid170
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid173 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid173 ) ;
+  swrl:body (
    _:genid175
    _:genid183
    _:genid178
@@ -859,92 +859,92 @@ _:genid170
  ) .
 
 _:genid173
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid175
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid178
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid180
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid182
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid183
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid188
    _:genid187
  ) ;
-  ns2:head ( _:genid190 ) .
+  swrl:head ( _:genid190 ) .
 
 _:genid187
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid188
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:beforeTheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:beforeTheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid190
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid193 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid193 ) ;
+  swrl:body (
    _:genid195
    _:genid197
  ) .
 
 _:genid193
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid195
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:beforeTheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:beforeTheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid197
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:lastFirstBeforeAfter-TheGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid200 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid200 ) ;
+  swrl:body (
    _:genid202
    _:genid210
    _:genid209
@@ -953,41 +953,41 @@ _:genid197
  ) .
 
 _:genid200
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid202
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid206
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid208
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid209
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid210
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid213 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid213 ) ;
+  swrl:body (
    _:genid223
    _:genid216
    _:genid222
@@ -996,191 +996,191 @@ _:genid210
  ) .
 
 _:genid213
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid216
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid220
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid221
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid222
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid223
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid230
    _:genid227
    _:genid229
  ) ;
-  ns2:head ( _:genid232 ) .
+  swrl:head ( _:genid232 ) .
 
 _:genid227
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceBehind ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceBehind ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid229
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceLateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceLateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid230
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceAhead ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceAhead ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid232
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid235
    _:genid237
    _:genid239
    _:genid243
    _:genid242
  ) ;
-  ns2:head ( _:genid245 ) .
+  swrl:head ( _:genid245 ) .
 
 _:genid235
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid237
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid239
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid242
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid243
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid245
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid248
    _:genid250
    _:genid252
  ) ;
-  ns2:head ( _:genid254 ) .
+  swrl:head ( _:genid254 ) .
 
 _:genid248
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid250
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid252
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid254
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid257
    _:genid259
    _:genid265
    _:genid264
    _:genid263
  ) ;
-  ns2:head ( _:genid267 ) .
+  swrl:head ( _:genid267 ) .
 
 _:genid257
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid259
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid263
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid264
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid265
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid267
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid270 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid270 ) ;
+  swrl:body (
    _:genid278
    _:genid273
    _:genid275
@@ -1188,150 +1188,150 @@ _:genid267
  ) .
 
 _:genid270
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 _:genid273
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid275
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid277
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid278
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid287
    _:genid286
    _:genid285
    _:genid284
  ) ;
-  ns2:head ( _:genid289 ) .
+  swrl:head ( _:genid289 ) .
 
 _:genid284
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid285
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid286
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid287
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid289
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid298
    _:genid293
    _:genid297
    _:genid296
  ) ;
-  ns2:head ( _:genid300 ) .
+  swrl:head ( _:genid300 ) .
 
 _:genid293
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid296
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid297
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid298
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid300
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid311
    _:genid304
    _:genid310
    _:genid309
    _:genid308
  ) ;
-  ns2:head ( _:genid313 ) .
+  swrl:head ( _:genid313 ) .
 
 _:genid304
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid308
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid309
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid310
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid311
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid313
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid316 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid316 ) ;
+  swrl:body (
    _:genid326
    _:genid325
    _:genid320
@@ -1340,65 +1340,65 @@ _:genid313
  ) .
 
 _:genid316
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid320
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid323
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid324
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid325
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid326
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid329
    _:genid331
  ) ;
-  ns2:head ( _:genid333 ) .
+  swrl:head ( _:genid333 ) .
 
 _:genid329
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Vehicle ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Vehicle ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid331
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:isOvertaking ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:isOvertaking ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid333
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid336 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid336 ) ;
+  swrl:body (
    _:genid346
    _:genid339
    _:genid345
@@ -1407,42 +1407,42 @@ _:genid333
  ) .
 
 _:genid336
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid339
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid343
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid344
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid345
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid346
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid349 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid349 ) ;
+  swrl:body (
    _:genid359
    _:genid358
    _:genid357
@@ -1451,197 +1451,197 @@ _:genid346
  ) .
 
 _:genid349
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid354
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid356
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid357
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid358
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid359
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid366
    _:genid363
    _:genid365
  ) ;
-  ns2:head ( _:genid368 ) .
+  swrl:head ( _:genid368 ) .
 
 _:genid363
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:hasSpaceBehind ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:hasSpaceBehind ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid365
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceLateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceLateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid366
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:hasSpaceAhead ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:hasSpaceAhead ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid368
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid371
    _:genid379
    _:genid374
    _:genid378
    _:genid377
  ) ;
-  ns2:head ( _:genid381 ) .
+  swrl:head ( _:genid381 ) .
 
 _:genid371
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid374
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid377
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid378
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid379
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid381
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid384
    _:genid386
    _:genid390
    _:genid389
  ) ;
-  ns2:head ( _:genid392 ) .
+  swrl:head ( _:genid392 ) .
 
 _:genid384
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid386
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid389
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid390
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid392
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid403
    _:genid402
    _:genid401
    _:genid398
    _:genid400
  ) ;
-  ns2:head ( _:genid405 ) .
+  swrl:head ( _:genid405 ) .
 
 _:genid398
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid400
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid401
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid402
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid403
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid405
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid408 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid408 ) ;
+  swrl:body (
    _:genid416
    _:genid411
    _:genid415
@@ -1649,150 +1649,150 @@ _:genid405
  ) .
 
 _:genid408
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainDistanceWithCarInFront ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainDistanceWithCarInFront ;
+  swrl:argument1 ns1:c .
 
 _:genid411
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid414
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid415
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid416
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid427
    _:genid420
    _:genid422
    _:genid426
    _:genid425
  ) ;
-  ns2:head ( _:genid429 ) .
+  swrl:head ( _:genid429 ) .
 
 _:genid420
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid422
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid425
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid426
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid427
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid429
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid438
    _:genid433
    _:genid435
    _:genid437
  ) ;
-  ns2:head ( _:genid440 ) .
+  swrl:head ( _:genid440 ) .
 
 _:genid433
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid435
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid437
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "faster"^^xsd:string ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "faster"^^xsd:string ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid438
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid440
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid449
    _:genid444
    _:genid446
    _:genid448
  ) ;
-  ns2:head ( _:genid451 ) .
+  swrl:head ( _:genid451 ) .
 
 _:genid444
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid446
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid448
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid449
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid451
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid464
    _:genid463
    _:genid456
@@ -1800,50 +1800,50 @@ _:genid451
    _:genid459
    _:genid461
  ) ;
-  ns2:head ( _:genid466 ) .
+  swrl:head ( _:genid466 ) .
 
 _:genid456
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid459
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid461
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid462
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid463
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid464
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid466
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid469 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid469 ) ;
+  swrl:body (
    _:genid477
    _:genid472
    _:genid474
@@ -1851,35 +1851,35 @@ _:genid466
  ) .
 
 _:genid469
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 _:genid472
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid474
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid476
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid477
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid480 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid480 ) ;
+  swrl:body (
    _:genid482
    _:genid484
    _:genid490
@@ -1888,78 +1888,78 @@ _:genid477
  ) .
 
 _:genid480
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid482
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid484
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid488
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid489
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid490
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid499
    _:genid494
    _:genid498
    _:genid497
  ) ;
-  ns2:head ( _:genid501 ) .
+  swrl:head ( _:genid501 ) .
 
 _:genid494
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid497
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid498
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid499
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid501
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid504 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid504 ) ;
+  swrl:body (
    _:genid514
    _:genid507
    _:genid509
@@ -1968,158 +1968,158 @@ _:genid501
  ) .
 
 _:genid504
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid507
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid509
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid512
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid513
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid514
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid523
    _:genid522
    _:genid521
    _:genid520
  ) ;
-  ns2:head ( _:genid525 ) .
+  swrl:head ( _:genid525 ) .
 
 _:genid520
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid521
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid522
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid523
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid525
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid528
    _:genid530
    _:genid532
    _:genid536
    _:genid535
  ) ;
-  ns2:head ( _:genid538 ) .
+  swrl:head ( _:genid538 ) .
 
 _:genid528
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid530
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid532
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid535
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid536
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid538
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid541
    _:genid543
    _:genid545
    _:genid547
  ) ;
-  ns2:head ( _:genid549 ) .
+  swrl:head ( _:genid549 ) .
 
 _:genid541
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid543
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid545
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid547
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid549
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid552 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid552 ) ;
+  swrl:body (
    _:genid560
    _:genid555
    _:genid557
@@ -2127,71 +2127,71 @@ _:genid549
  ) .
 
 _:genid552
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainDistanceWithCarInFront ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainDistanceWithCarInFront ;
+  swrl:argument1 ns1:c .
 
 _:genid555
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid557
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid559
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid560
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid569
    _:genid568
    _:genid565
    _:genid567
  ) ;
-  ns2:head ( _:genid571 ) .
+  swrl:head ( _:genid571 ) .
 
 _:genid565
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid567
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid568
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid569
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid571
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid574 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid574 ) ;
+  swrl:body (
    _:genid582
    _:genid577
    _:genid579
@@ -2199,34 +2199,34 @@ _:genid571
  ) .
 
 _:genid574
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 _:genid577
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid579
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid581
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid582
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid595
    _:genid594
    _:genid587
@@ -2234,86 +2234,86 @@ _:genid582
    _:genid590
    _:genid592
  ) ;
-  ns2:head ( _:genid597 ) .
+  swrl:head ( _:genid597 ) .
 
 _:genid587
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid590
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid592
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid593
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid594
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid595
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid597
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid606
    _:genid601
    _:genid603
    _:genid605
  ) ;
-  ns2:head ( _:genid608 ) .
+  swrl:head ( _:genid608 ) .
 
 _:genid601
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid603
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid605
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid606
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid608
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid611 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid611 ) ;
+  swrl:body (
    _:genid621
    _:genid620
    _:genid615
@@ -2322,41 +2322,41 @@ _:genid608
  ) .
 
 _:genid611
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid615
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid618
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid619
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid620
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid621
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid624 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid624 ) ;
+  swrl:body (
    _:genid634
    _:genid627
    _:genid629
@@ -2365,86 +2365,86 @@ _:genid621
  ) .
 
 _:genid624
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid627
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid629
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid632
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid633
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid634
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid637
    _:genid645
    _:genid644
    _:genid643
    _:genid642
  ) ;
-  ns2:head ( _:genid647 ) .
+  swrl:head ( _:genid647 ) .
 
 _:genid637
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid642
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid643
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid644
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid645
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid647
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid650 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid650 ) ;
+  swrl:body (
    _:genid660
    _:genid659
    _:genid658
@@ -2453,200 +2453,200 @@ _:genid647
  ) .
 
 _:genid650
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid656
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid657
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid658
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid659
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid660
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid671
    _:genid670
    _:genid665
    _:genid667
    _:genid669
  ) ;
-  ns2:head ( _:genid673 ) .
+  swrl:head ( _:genid673 ) .
 
 _:genid665
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid667
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid669
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid670
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid671
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid673
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid684
    _:genid677
    _:genid683
    _:genid680
    _:genid682
  ) ;
-  ns2:head ( _:genid686 ) .
+  swrl:head ( _:genid686 ) .
 
 _:genid677
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid680
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid682
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid683
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid684
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid686
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid689
    _:genid695
    _:genid692
    _:genid694
  ) ;
-  ns2:head ( _:genid697 ) .
+  swrl:head ( _:genid697 ) .
 
 _:genid689
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid692
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid694
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid695
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid697
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid700
    _:genid706
    _:genid703
    _:genid705
  ) ;
-  ns2:head ( _:genid708 ) .
+  swrl:head ( _:genid708 ) .
 
 _:genid700
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid703
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid705
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid706
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid708
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid711 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid711 ) ;
+  swrl:body (
    _:genid713
    _:genid721
    _:genid716
@@ -2655,72 +2655,72 @@ _:genid708
  ) .
 
 _:genid711
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid713
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid716
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid719
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid720
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid721
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid724 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid724 ) ;
+  swrl:body (
    _:genid730
    _:genid727
    _:genid729
  ) .
 
 _:genid724
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid727
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid729
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid730
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid733 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid733 ) ;
+  swrl:body (
    _:genid743
    _:genid736
    _:genid738
@@ -2729,78 +2729,78 @@ _:genid730
  ) .
 
 _:genid733
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid736
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid738
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid740
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker .
 
 _:genid742
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid743
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:AfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:AfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid752
    _:genid747
    _:genid751
    _:genid750
  ) ;
-  ns2:head ( _:genid754 ) .
+  swrl:head ( _:genid754 ) .
 
 _:genid747
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid750
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid751
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid752
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid754
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid757 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid757 ) ;
+  swrl:body (
    _:genid767
    _:genid760
    _:genid766
@@ -2809,41 +2809,41 @@ _:genid754
  ) .
 
 _:genid757
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid760
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid763
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid765
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid766
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid767
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid770 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid770 ) ;
+  swrl:body (
    _:genid772
    _:genid774
    _:genid780
@@ -2852,41 +2852,41 @@ _:genid767
  ) .
 
 _:genid770
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid772
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid774
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid777
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid779
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid780
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid783 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid783 ) ;
+  swrl:body (
    _:genid791
    _:genid786
    _:genid790
@@ -2894,170 +2894,170 @@ _:genid780
  ) .
 
 _:genid783
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 _:genid786
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid789
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid790
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid791
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid798
    _:genid797
    _:genid796
  ) ;
-  ns2:head ( _:genid800 ) .
+  swrl:head ( _:genid800 ) .
 
 _:genid796
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid797
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid798
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid800
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid803
    _:genid805
    _:genid807
  ) ;
-  ns2:head ( _:genid809 ) .
+  swrl:head ( _:genid809 ) .
 
 _:genid803
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid805
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid807
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:isInFrontOfOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:isInFrontOfOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid809
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid812
    _:genid814
    _:genid816
    _:genid818
  ) ;
-  ns2:head ( _:genid820 ) .
+  swrl:head ( _:genid820 ) .
 
 _:genid812
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid814
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid816
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid818
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid820
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:MaintainSpeed ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:MaintainSpeed ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid829
    _:genid824
    _:genid826
    _:genid828
  ) ;
-  ns2:head ( _:genid831 ) .
+  swrl:head ( _:genid831 ) .
 
 _:genid824
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid826
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid828
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid829
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid831
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid834 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid834 ) ;
+  swrl:body (
    _:genid842
    _:genid837
    _:genid841
@@ -3065,321 +3065,321 @@ _:genid831
  ) .
 
 _:genid834
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid837
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid840
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid841
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid842
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid853
    _:genid846
    _:genid848
    _:genid852
    _:genid851
  ) ;
-  ns2:head ( _:genid855 ) .
+  swrl:head ( _:genid855 ) .
 
 _:genid846
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid848
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid851
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid852
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid853
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid855
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid858
    _:genid866
    _:genid865
    _:genid864
    _:genid863
  ) ;
-  ns2:head ( _:genid868 ) .
+  swrl:head ( _:genid868 ) .
 
 _:genid858
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NoSpace ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NoSpace ;
+  swrl:argument1 ns1:c .
 
 _:genid863
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid864
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid865
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid866
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid868
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid871
    _:genid879
    _:genid878
    _:genid875
    _:genid877
  ) ;
-  ns2:head ( _:genid881 ) .
+  swrl:head ( _:genid881 ) .
 
 _:genid871
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid875
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid877
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid878
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid879
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid881
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid884
    _:genid886
    _:genid888
    _:genid890
    _:genid892
  ) ;
-  ns2:head ( _:genid894 ) .
+  swrl:head ( _:genid894 ) .
 
 _:genid884
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid886
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid888
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid890
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid892
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid894
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid905
    _:genid904
    _:genid899
    _:genid901
    _:genid903
  ) ;
-  ns2:head ( _:genid907 ) .
+  swrl:head ( _:genid907 ) .
 
 _:genid899
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid901
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid903
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithOvertaker .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithOvertaker .
 
 _:genid904
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:LastBeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:LastBeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid905
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid907
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Decelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Decelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid912
    _:genid911
  ) ;
-  ns2:head ( _:genid914 ) .
+  swrl:head ( _:genid914 ) .
 
 _:genid911
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:isOvertaking ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:isOvertaking ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid912
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Vehicle ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Vehicle ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid914
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid925
    _:genid924
    _:genid919
    _:genid921
    _:genid923
  ) ;
-  ns2:head ( _:genid927 ) .
+  swrl:head ( _:genid927 ) .
 
 _:genid919
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid921
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid923
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid924
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 ns1:c .
 
 _:genid925
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:BeforeGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:BeforeGap ;
+  swrl:argument1 ns1:c .
 
 _:genid927
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid930 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid930 ) ;
+  swrl:body (
    _:genid932
    _:genid934
    _:genid936
@@ -3388,41 +3388,41 @@ _:genid927
  ) .
 
 _:genid930
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid932
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
 
 _:genid934
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:FirstAfterGap ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:FirstAfterGap ;
+  swrl:argument1 ns1:c .
 
 _:genid936
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:NotOvertaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:NotOvertaker ;
+  swrl:argument1 ns1:c .
 
 _:genid939
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid940
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid943 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid943 ) ;
+  swrl:body (
    _:genid945
    _:genid951
    _:genid948
@@ -3430,118 +3430,118 @@ _:genid940
  ) .
 
 _:genid943
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftAccelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftAccelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid945
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid948
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid950
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid951
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid954 ) ;
-  ns2:body ( _:genid956 ) .
+  a swrl:Imp ;
+  swrl:head ( _:genid954 ) ;
+  swrl:body ( _:genid956 ) .
 
 _:genid954
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Lateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Lateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 _:genid956
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 true ;
-  ns2:propertyPredicate ns1:hasSpaceLateral ;
-  ns2:argument1 <urn:swrl#c> .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 true ;
+  swrl:propertyPredicate ns1:hasSpaceLateral ;
+  swrl:argument1 <urn:swrl#c> .
 
 []
-  a ns2:Imp ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:body (
    _:genid959
    _:genid961
    _:genid967
    _:genid964
    _:genid966
  ) ;
-  ns2:head ( _:genid969 ) .
+  swrl:head ( _:genid969 ) .
 
 _:genid959
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Behind ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Behind ;
+  swrl:argument1 ns1:c .
 
 _:genid961
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid964
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "3"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithAheadCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "3"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithAheadCar .
 
 _:genid966
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "2"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBehindCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "2"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBehindCar .
 
 _:genid967
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 false ;
-  ns2:propertyPredicate ns1:bigSpeedDifference ;
-  ns2:argument1 ns1:c .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 false ;
+  swrl:propertyPredicate ns1:bigSpeedDifference ;
+  swrl:argument1 ns1:c .
 
 _:genid969
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:SoftDecelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:SoftDecelerate ;
+  swrl:argument1 ns1:c .
 
 []
-  a ns2:Imp ;
-  ns2:head ( _:genid972 ) ;
-  ns2:body (
+  a swrl:Imp ;
+  swrl:head ( _:genid972 ) ;
+  swrl:body (
    _:genid978
    _:genid977
    _:genid976
  ) .
 
 _:genid972
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Accelerate ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Accelerate ;
+  swrl:argument1 ns1:c .
 
 _:genid976
-  a ns2:DatavaluedPropertyAtom ;
-  ns2:argument2 "1"^^xsd:long ;
-  ns2:argument1 ns1:c ;
-  ns2:propertyPredicate ns1:speedWithBeforeTheGapCar .
+  a swrl:DatavaluedPropertyAtom ;
+  swrl:argument2 "1"^^xsd:long ;
+  swrl:argument1 ns1:c ;
+  swrl:propertyPredicate ns1:speedWithBeforeTheGapCar .
 
 _:genid977
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Overtaker ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Overtaker ;
+  swrl:argument1 ns1:c .
 
 _:genid978
-  a ns2:ClassAtom ;
-  ns2:classPredicate ns1:Ahead ;
-  ns2:argument1 ns1:c .
+  a swrl:ClassAtom ;
+  swrl:classPredicate ns1:Ahead ;
+  swrl:argument1 ns1:c .
